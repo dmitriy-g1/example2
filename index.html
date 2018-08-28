@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+<script src="js/eligreyClassListPolyfill.js" type="text/javascript"></script>
+<script src="js/scrollwidget.js" type="text/javascript"></script>
+<script src="js/additional.js" type="text/javascript"></script>
+<title>zero</title>
+</head> 
+<body>
+
+<section class="section first">
+  <div class="section_inner">
+    <div class="from_right hidden">
+      <h1>LOREM IPSUM DOLOR SIT AMET</h1>
+    </div>
+  </div>
+  <div class="background"></div>
+</section>
+<section class="section second">
+  <div class="section_inner">
+    <div class="from_left hidden">
+      <h1>AENEAN COMMODO LIGULA EGET</h1>
+    </div>
+  </div>
+  <div class="background"></div>
+</section>
+<section class="section third">
+  <div class="section_inner">
+    <div class="from_right hidden">
+      <h1>CUM SOCIIS NATOQUE PENATIBUS</h1>
+    </div>
+  </div>
+  <div class="background"></div>
+</section>
+<section class="section fourth">
+  <div class="section_inner">
+    <div class="from_left hidden">
+      <h1>NULLA CONSEQUAT MASSA QUIS</h1>
+    </div>
+  </div>
+  <div class="background"></div>
+</section>
+
+<script>
+window.addEventListener("load", function () {
+  //
+  var ParallaxItems = document.querySelectorAll(".section");
+  ParallaxItems.forEach(function (i) {
+    ParallaxItem(i);
+  });
+  //
+  var headers = document.querySelectorAll(".section .hidden");
+  scrollWidget (headers, "show", 4)
+});
+</script>
+  
+</body>
